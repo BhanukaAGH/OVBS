@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100vh;
+    background: black;
+    transition: all 0.2s linear;
+}
+
+.background {
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    height: 100vh;
+    position: relative;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.background .overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    z-index: 12;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-bar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    z-index: 12;
+}
+
+.nav-bar .title {
+    font-family: 'Goldman', cursive;
+    font-size: 28px;
+    letter-spacing: 0.1rem;
+    color: white;
+    margin-left: 20px;
+}
+
+.title span {
+    color: #eb1414;
+}
+
+.register-form {
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    height: auto;
+    box-shadow: 2px 2px 30px rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.register-form h1 {
+    font-size: 34px;
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.register-form input {
+    margin: 10px 0;
+    width: 320px;
+    height: 55px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.register-form input[type=text],
+[type=password] {
+    background: #333;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: rgb(212, 207, 212);
+}
+
+.register-form input[type=text]:focus,
+[type=password]:focus {
+    color: white;
+    background: hsla(0, 0%, 42%, 0.726);
+}
+
+.register-form input[type=submit] {
+    background: #eb1414;
+    color: white;
+    font-size: 18px;
+    margin: 30px 0 15px 0;
+}
+
+.register-form input[type=submit]:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+}
+
+.register-form p {
+    color: white;
+}
+
+.social-login {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+i {
+    font-size: 26px;
+    color: white;
+}
+
+p a {
+    color: #eb1414;
+}
+
+@media screen and (max-width: 1200px) {
+    nav {
+        height: 8vh;
+    }
+    .register-form {
+        padding: 40px;
+    }
+    .register-form h1 {
+        font-size: 28px;
+        margin-bottom: 14px;
+    }
+    .register-form input {
+        margin: 8px 0;
+        width: 280px;
+        height: 48px;
+    }
+    .social-login {
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    height: 45vh;
+    background: url(../img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 4px solid red;
+}
+
+.User {
+    background: #1E2129;
+    color: white;
+    min-height: 55vh;
+}
+
+.User h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 20px auto;
+    font-size: 18px;
+}
+
+th,
+td {
+    padding: 8px 0px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+td button {
+    text-decoration: underline;
+    cursor: pointer;
+    color: red;
+    background: none;
+    border: none;
+    font-size: 18px;
+}

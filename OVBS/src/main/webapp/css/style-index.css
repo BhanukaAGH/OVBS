@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100vh;
+    background: black;
+    transition: all 0.2s linear;
+}
+
+.background {
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    height: 100vh;
+    position: relative;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.background .overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    height: 6vh;
+    z-index: 12;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-bar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    z-index: 12;
+    border-bottom: 2px solid white;
+}
+
+.nav-bar .title {
+    font-family: 'Goldman', cursive;
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+    color: white;
+    margin-left: 20px;
+}
+
+.title span {
+    color: #eb1414;
+}
+
+.sign-in {
+    margin-right: 20px;
+}
+
+.sign-in button {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: #eb1414;
+    transition: all 0.2s linear;
+}
+
+.sign-in button:hover {
+    background: white;
+    cursor: pointer;
+    color: black;
+}
+
+.banner {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 200px;
+}
+
+.banner h1 {
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 60px;
+    margin-bottom: 5px;
+}
+
+.banner h3 {
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    width: 800px;
+    text-align: center;
+}
+
+.banner button {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: #eb1414;
+    transition: all 0.2s linear;
+}
+
+.banner button:hover {
+    background: white;
+    cursor: pointer;
+    color: black;
+}
+
+@media screen and (max-width: 1200px) {
+    nav {
+        height: 8vh;
+    }
+    .banner {
+        margin-top: 180px;
+    }
+    .banner h1 {
+        font-size: 50px;
+        line-height: 45px;
+    }
+    .banner h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .banner p {
+        font-size: 18px;
+        width: 680px;
+    }
+}
